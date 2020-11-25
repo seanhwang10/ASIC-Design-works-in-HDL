@@ -3,6 +3,7 @@ This repository includes some of my sample coursework in ASIC design laboratorie
 
 ************
 All works done in this course is NDA protected, and I have deliberately destroyed some portions of the source code
+SOURCE CODES WILL NOT RUN AT ALL!! 
 ************
 
 Current Samples: 
