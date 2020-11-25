@@ -6,7 +6,7 @@ This repository includes some of my sample coursework in ASIC design laboratorie
 Current Samples: 
 1. UART Receiver 
 2. APB-Slave UART Receiver SoC Peripheral
-3. Pipelined SoC Bus Protocol (AHB-Lite) 
+3. Pipelined SoC Bus Protocol (AHB-Lite) - added on 11/24 
 
 ************
 ATTENTION: 
