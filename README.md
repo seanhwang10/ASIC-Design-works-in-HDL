@@ -1,8 +1,5 @@
 # ASIC-Design-works-in-HDL
-This repository includes some of my SAMPLE coursework in ASIC design laboratories. 
-
-************
-
+## This repository includes some of my SAMPLE coursework in ASIC design laboratories. 
 Current Samples: 
 1. UART Receiver 
 2. APB-Slave UART Receiver SoC Peripheral
