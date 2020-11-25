@@ -1,3 +1,11 @@
+// $Id: $
+// File name:   tb_flex_counter.sv
+// Created:     9/23/2020
+// Author:      Sean Hwang
+// Lab Section: 337-011
+// Version:     1.0  Initial Design Entry
+// Description: TB for flex counter
+
 `timescale 1ns / 10ps
 
 module tb_ahb_lite_slave();
@@ -438,69 +446,11 @@ initial begin
   // Give some visual spacing between check and next test case start
   #(CLK_PERIOD * 3);
 
-  // Student TODO: Add more test cases here
-  // Test Case 3: coeff_clr test
-  
-  // Update Navigation Info
-  tb_test_case     = "coeff_clr test";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
-  // Reset the DUT to isolate from prior test case
-  reset_dut();
-  $info("test case %d, %s", tb_test_case_num, tb_test_case);
+ /* 
 
-  tb_test_data = 16'h0001;
-  enqueue_transaction(1'b1, WRITE, ADDR_COEF_SET, tb_test_data, NOERR, SIZE_0);
-  //  execute_transactions(1);
-  enqueue_transaction(1'b1, READ, ADDR_COEF_SET, tb_test_data, NOERR, SIZE_1);
+ REMOVED FOR VIEWING 
 
-  execute_transactions(2);
-  tb_coeff_clr = 1;
-  #(CLK_PERIOD * 1.5);
-  tb_coeff_clr = 0;
-  enqueue_transaction(1'b1, READ, ADDR_COEF_SET, 16'b0, NOERR, SIZE_1);
-  execute_transactions(1);
-  #(CLK_PERIOD * 3);
-
-   
-  // Test Case 4: read status register test
-    tb_test_case     = "read status register test";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
-  reset_dut();
-  $info("test case %d, %s", tb_test_case_num, tb_test_case);
-
-  $info("read status");
-  tb_err = 1;
-  enqueue_transaction(1'b1, READ, ADDR_STATUS, 16'h0100, NOERR, SIZE_1);
-  execute_transactions(1);
-  tb_modwait = 1;
-  enqueue_transaction(1'b1, READ, ADDR_STATUS, 16'h0101, NOERR, SIZE_1);
-  execute_transactions(1);
-  tb_err = 0;
-  enqueue_transaction(1'b1, READ, ADDR_STATUS, 16'h0001, NOERR, SIZE_1);
-  execute_transactions(1);
-  tb_modwait = 0;
-  enqueue_transaction(1'b1, READ, ADDR_STATUS, 16'h0000, NOERR, SIZE_1);
-  execute_transactions(1);
-  #(CLK_PERIOD * 3);
-
-  
-  // Test Case 5: write status register err test
-  
-  tb_test_case     = "write status register err test";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
-  // Reset the DUT to isolate from prior test case
-  reset_dut();
-  $info("test case %d, %s", tb_test_case_num, tb_test_case);
-  enqueue_transaction(1'b1, WRITE, ADDR_STATUS, 16'h0100, ERR, SIZE_1);
-  execute_transactions(1);
-  #(CLK_PERIOD * 3);
-
+ */ 
 
 end
 

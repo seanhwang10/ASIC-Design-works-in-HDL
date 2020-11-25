@@ -1,3 +1,11 @@
+// $Id: $
+// File name:   tb_flex_counter.sv
+// Created:     9/23/2020
+// Author:      Sean Hwang
+// Lab Section: 337-011
+// Version:     1.0  Initial Design Entry
+// Description: TB for flex counter
+
 `timescale 1ns / 10ps
 
 module tb_ahb_lite_fir_filter();
@@ -438,85 +446,11 @@ initial begin
   #(CLK_PERIOD * 3);
 
 
-  //*****************************************************************************
-  // Test Case 2: Configure and check Coefficient Value
-  //*****************************************************************************
-  // Update Navigation Info
-  tb_test_case     = "Configure Coeff ";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
+ /* 
 
-  // Reset the DUT to isolate from prior test case
-  reset_dut();
+ REMOVED FOR VIEWING 
 
-  configure(tb_test_vectors[0].coeffs);
-
-  // Give some visual spacing between check and next test case start
-  #(CLK_PERIOD * 20);
-
-
- //*****************************************************************************
-  // Test Case 3: send sample test
-  //*****************************************************************************
-  // Update Navigation Info
-  tb_test_case     = "send sample test";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
-  // Reset the DUT to isolate from prior test case
-  reset_dut();
-  $info("test case %d, %s", tb_test_case_num, tb_test_case);
-  configure(tb_test_vectors[0].coeffs);
-
-  tb_test_data = tb_test_vectors[0].samples[0];
-  enqueue_transaction(1'b1, WRITE, ADDR_SAMPLE, tb_test_data, NOERR, SIZE_1);
-  enqueue_transaction(1'b1, READ, ADDR_SAMPLE, tb_test_data, NOERR, SIZE_1);
-
-  execute_transactions(2);
-  $info("check data ready!");
-
-  #(CLK_PERIOD * 20);
-
-  enqueue_transaction(1'b1, WRITE, ADDR_SAMPLE, tb_test_data, NOERR, SIZE_1);
-  execute_transactions(1);
-
-  #(CLK_PERIOD * 20);
-
-  enqueue_transaction(1'b1, WRITE, ADDR_SAMPLE, tb_test_data, NOERR, SIZE_1);
-  execute_transactions(1);
-
-  #(CLK_PERIOD * 20);
-
-
-  //*****************************************************************************
-  // Test Case 4: write status register err test
-  //*****************************************************************************
-  // Update Navigation Info
-  tb_test_case     = "write status register err test";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
-  // Reset the DUT to isolate from prior test case
-  reset_dut();
-  $info("test case %d, %s", tb_test_case_num, tb_test_case);
-  enqueue_transaction(1'b1, WRITE, ADDR_STATUS, 16'h0100, ERR, SIZE_1);
-  execute_transactions(1);
-
-  #(CLK_PERIOD * 3);
-
-  //*****************************************************************************
-  // Test Case 5: vector test
-  //*****************************************************************************
-  // Update Navigation Info
-  tb_test_case     = "vector test";
-  tb_test_case_num = tb_test_case_num + 1;
-  init_fir_side();
-  init_expected_outs();
-  // Reset the DUT to isolate from prior test case
-  reset_dut();
-
-  test_stream(tb_test_vectors[0]);
+ */ 
 
 end
 
