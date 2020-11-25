@@ -11,10 +11,11 @@ Current Samples:
 ************
 ATTENTION: 
 
-All works done in this course is NDA protected, and I have deliberately destroyed some portions of the source code as this repository was made for presenting my works as a SAMPLE. Also, I have removed most modules in each projects in this repo. 
-
-Original works (with full module implementations) and more projects are in my private repositories. 
+All works done in this course is NDA protected, and I have deliberately destroyed some portions of the source code as this repository was made for presenting my works as a SAMPLE. 
+Some required modules are not included in this repo at all. 
+********
+Original works (with full working module implementations) and more projects are in my private repositories. 
 If you are a recruiter who wishes to view my work, please send me an email and I will open my private repository for viewing. 
 
-SOURCE CODES IN THIS REPO WILL NOT RUN AT ALL!! 
+again, SOURCE CODES IN THIS REPO WILL NOT RUN AT ALL!! 
 
