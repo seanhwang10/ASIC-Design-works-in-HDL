@@ -1,5 +1,5 @@
 # ASIC-Design-works-in-HDL
-****
+
 This repository includes some of my SAMPLE coursework in ASIC design laboratories. 
 ****
 Current Samples: 
