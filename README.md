@@ -9,6 +9,7 @@ Current Samples:
 3. Pipelined SoC Bus Protocol (AHB-Lite) 
 
 ************
+ATTENTION: 
 
 All works done in this course is NDA protected, and I have deliberately destroyed some portions of the source code as this repository was made for presenting my works as a SAMPLE. Also, I have removed most modules in each projects in this repo. 
 
