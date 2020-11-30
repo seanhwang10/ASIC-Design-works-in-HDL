@@ -1,10 +1,10 @@
 // $Id: $
-// File name:   rcv_block.sv
+// File name:   rx_data_buff.sv
 // Created:     10/8/2020
 // Author:      Sean Hwang
 // Lab Section: 337-011
 // Version:     1.0  Initial Design Entry
-// Description: Receiver block 
+// Description: Data buff module
 
 `timescale 1ns / 10ps
 
